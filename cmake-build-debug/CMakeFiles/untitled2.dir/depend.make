@@ -4,6 +4,7 @@
 CMakeFiles\untitled2.dir\Core.cpp.obj: ..\Core.cpp
 
 CMakeFiles\untitled2.dir\Kernel.cpp.obj: ..\Kernel.cpp
+CMakeFiles\untitled2.dir\Kernel.cpp.obj: ..\Process.cpp
 
 CMakeFiles\untitled2.dir\Process.cpp.obj: ..\Process.cpp
 

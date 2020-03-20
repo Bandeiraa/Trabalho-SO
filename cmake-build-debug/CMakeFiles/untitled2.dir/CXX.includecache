@@ -6,19 +6,29 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/frdav/CLionProjects/untitled2/Core.cpp
+C:/Users/frdav/CLionProjects/untitled2/Kernel.cpp
+Process.cpp
+C:/Users/frdav/CLionProjects/untitled2/Process.cpp
+vector
+-
+iostream
+-
+string
+-
 
 C:/Users/frdav/CLionProjects/untitled2/Process.cpp
+iostream
+-
 
-C:/Users/frdav/CLionProjects/untitled2/Scheduler.cpp
+C:/Users/frdav/CLionProjects/untitled2/Simulator.cpp
 string
 -
 iostream
 -
-vector
+thread
 -
-Process.cpp
-C:/Users/frdav/CLionProjects/untitled2/Process.cpp
-Core.cpp
-C:/Users/frdav/CLionProjects/untitled2/Core.cpp
+Kernel.cpp
+C:/Users/frdav/CLionProjects/untitled2/Kernel.cpp
+random
+-
 
