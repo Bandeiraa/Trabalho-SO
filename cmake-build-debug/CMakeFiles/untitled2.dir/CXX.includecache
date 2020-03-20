@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/frdav/CLionProjects/untitled2/Core.cpp
+
+C:/Users/frdav/CLionProjects/untitled2/Process.cpp
+
+C:/Users/frdav/CLionProjects/untitled2/Scheduler.cpp
+string
+-
+iostream
+-
+vector
+-
+Process.cpp
+C:/Users/frdav/CLionProjects/untitled2/Process.cpp
+Core.cpp
+C:/Users/frdav/CLionProjects/untitled2/Core.cpp
+

@@ -1,0 +1,97 @@
+The system is: Windows - 10.0.18363 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: R:/Visual Studio Community/VC/Tools/MSVC/14.24.28314/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Versão 19.24.28316 para x86
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.24.28316.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "C:/Users/frdav/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: R:/Visual Studio Community/VC/Tools/MSVC/14.24.28314/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) C/C++ Optimizing Compiler Versão 19.24.28316 para x86
+Copyright (C) Microsoft Corporation. Todos os direitos reservados.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.24.28316.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/frdav/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/Users/frdav/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_75f84\fast && 	"R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_75f84.dir\build.make /nologo -L                  CMakeFiles\cmTC_75f84.dir\build
+Building C object CMakeFiles/cmTC_75f84.dir/testCCompiler.c.obj
+	"R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\Hostx86\x86\cl.exe" @C:\Users\frdav\AppData\Local\Temp\nm37A9.tmp
+testCCompiler.c
+Linking C executable cmTC_75f84.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_75f84.dir --rc="R:\Windows Kits\10\bin\10.0.18362.0\x86\rc.exe" --mt="R:\Windows Kits\10\bin\10.0.18362.0\x86\mt.exe" --manifests  -- "R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\Hostx86\x86\link.exe" /nologo @CMakeFiles\cmTC_75f84.dir\objects1.rsp @C:\Users\frdav\AppData\Local\Temp\nm3807.tmp
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/frdav/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_172e4\fast && 	"R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_172e4.dir\build.make /nologo -L                  CMakeFiles\cmTC_172e4.dir\build
+Building C object CMakeFiles/cmTC_172e4.dir/CMakeCCompilerABI.c.obj
+	"R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\Hostx86\x86\cl.exe" @C:\Users\frdav\AppData\Local\Temp\nm3BEE.tmp
+CMakeCCompilerABI.c
+Linking C executable cmTC_172e4.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_172e4.dir --rc="R:\Windows Kits\10\bin\10.0.18362.0\x86\rc.exe" --mt="R:\Windows Kits\10\bin\10.0.18362.0\x86\mt.exe" --manifests  -- "R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\Hostx86\x86\link.exe" /nologo @CMakeFiles\cmTC_172e4.dir\objects1.rsp @C:\Users\frdav\AppData\Local\Temp\nm3C8C.tmp
+
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/Users/frdav/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_630ee\fast && 	"R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_630ee.dir\build.make /nologo -L                  CMakeFiles\cmTC_630ee.dir\build
+Building CXX object CMakeFiles/cmTC_630ee.dir/testCXXCompiler.cxx.obj
+	"R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\Hostx86\x86\cl.exe" @C:\Users\frdav\AppData\Local\Temp\nm3FC7.tmp
+testCXXCompiler.cxx
+Linking CXX executable cmTC_630ee.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_630ee.dir --rc="R:\Windows Kits\10\bin\10.0.18362.0\x86\rc.exe" --mt="R:\Windows Kits\10\bin\10.0.18362.0\x86\mt.exe" --manifests  -- "R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\Hostx86\x86\link.exe" /nologo @CMakeFiles\cmTC_630ee.dir\objects1.rsp @C:\Users\frdav\AppData\Local\Temp\nm4035.tmp
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/frdav/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_ff607\fast && 	"R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_ff607.dir\build.make /nologo -L                  CMakeFiles\cmTC_ff607.dir\build
+Building CXX object CMakeFiles/cmTC_ff607.dir/CMakeCXXCompilerABI.cpp.obj
+	"R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\Hostx86\x86\cl.exe" @C:\Users\frdav\AppData\Local\Temp\nm42A5.tmp
+CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_ff607.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_ff607.dir --rc="R:\Windows Kits\10\bin\10.0.18362.0\x86\rc.exe" --mt="R:\Windows Kits\10\bin\10.0.18362.0\x86\mt.exe" --manifests  -- "R:\Visual Studio Community\VC\Tools\MSVC\14.24.28314\bin\Hostx86\x86\link.exe" /nologo @CMakeFiles\cmTC_ff607.dir\objects1.rsp @C:\Users\frdav\AppData\Local\Temp\nm43DF.tmp
+
+
+

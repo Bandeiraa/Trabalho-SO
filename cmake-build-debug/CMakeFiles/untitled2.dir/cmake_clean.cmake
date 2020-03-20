@@ -1,0 +1,16 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/untitled2.dir/Core.cpp.obj"
+  "CMakeFiles/untitled2.dir/Kernel.cpp.obj"
+  "CMakeFiles/untitled2.dir/Process.cpp.obj"
+  "CMakeFiles/untitled2.dir/Scheduler.cpp.obj"
+  "CMakeFiles/untitled2.dir/Simulator.cpp.obj"
+  "untitled2.exe"
+  "untitled2.exe.manifest"
+  "untitled2.lib"
+  "untitled2.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/untitled2.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
