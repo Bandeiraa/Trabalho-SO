@@ -41,6 +41,7 @@ public:
     }
 
     void printProcessTable(){
+        cout << "--Processos--" << endl;
         for (int i=0; i < process_table.size(); i++) {
             cout << "id: " ;
             cout << process_table[i]->getProcessId() << endl;

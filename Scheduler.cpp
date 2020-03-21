@@ -1,29 +1,25 @@
 #include <vector>
 #include "Core.cpp"
 #include "Kernel.cpp"
+#include "Simulator.cpp"""
 
 using namespace std;
 
 
 class Scheduler {
-    Kernel kernel;
-    enum enum_scheduling_algorithm {
-        fifo,
-        shortest_job,
-        round_robin
-    };
+    Kernel* kernel;
 
     vector<Core*> cores;
     vector<Process*> ready_queue;
-    enum_scheduling_algorithm* scheduling_algorithm;
+    Simulator::enum_scheduling_algorithm* scheduling_algorithm;
 public:
 
-    Kernel getKernel() const {
+    Kernel* getKernel() const {
         return kernel;
     }
 
-    void setKernel(const Kernel &kernel) {
-        Scheduler::kernel = kernel;
+    void setKernel(Kernel* kernel) {
+        kernel = kernel;
     }
 
      vector<Core*> getCores() {
@@ -42,21 +38,21 @@ public:
         ready_queue = readyQueue;
     }
 
-    enum_scheduling_algorithm *getSchedulingAlgorithm()  {
+    Simulator::enum_scheduling_algorithm *getSchedulingAlgorithm()  {
         return scheduling_algorithm;
     }
 
-    void setSchedulingAlgorithm(enum_scheduling_algorithm *schedulingAlgorithm) {
+    void setSchedulingAlgorithm(Simulator::enum_scheduling_algorithm* schedulingAlgorithm) {
         scheduling_algorithm = schedulingAlgorithm;
     }
 
-    Scheduler(Kernel kernel, vector<Core*> cores, enum_scheduling_algorithm schedulingAlgorithm){
-        Scheduler::kernel = kernel;
-        Scheduler::cores = cores;
-        scheduling_algorithm = (enum_scheduling_algorithm *) schedulingAlgorithm;
+    Scheduler(Kernel* pKernel, vector<Core*> cores, Simulator::enum_scheduling_algorithm* schedulingAlgorithm){
+        kernel = pKernel;
+        cores = cores;
+        scheduling_algorithm = schedulingAlgorithm;
     }
 
-    void set_scheduling_algorithm(enum scheduling_algorithm){
+    void set_scheduling_algorithm(Simulator::enum_scheduling_algorithm* scheduling_algorithm){
         this->scheduling_algorithm = scheduling_algorithm;
     }
 
@@ -87,4 +83,5 @@ public:
     void roundrobin(){
 
     }
+
 };

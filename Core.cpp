@@ -1,15 +1,14 @@
 #include "Process.cpp"
 class Core{
-    Process current_process;
+    Process* current_process;
 public:
     Core(){
-
     }
-    const Process &getCurrentProcess() const {
+    Process* getCurrentProcess(){
         return current_process;
     }
 
-    void setCurrentProcess(const Process &currentProcess) {
+    void setCurrentProcess(Process* currentProcess) {
         current_process = currentProcess;
     }
 };
