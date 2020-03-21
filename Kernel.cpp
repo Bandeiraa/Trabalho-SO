@@ -1,13 +1,14 @@
-#include "Process.cpp"
 #include <vector>
 #include <iostream>
 #include <string>
+#include "Scheduler.cpp"
 
 using namespace std;
 
 class Kernel{
 
     vector<Process*> process_table;
+    Scheduler* scheduler;
 
     void run(){
 

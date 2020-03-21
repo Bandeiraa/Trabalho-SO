@@ -35,7 +35,7 @@ public:
 
     enum_scheduling_algorithm* scheduling_algorithm;
 
-    Simulator(Kernel* defaultKernel, int core_number, int dquantum) {
+    Simulator(int core_number, int dquantum) {
         kernel = defaultKernel;
         processor_cores_number = core_number;
         quantum = dquantum;
