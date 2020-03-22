@@ -5,49 +5,53 @@
 
 using namespace std;
 
-class Kernel{
+class Kernel {
 
     vector<Process*> process_table;
     Scheduler* scheduler;
+    Cpu* cpu;
 
-    void run(){
-
-    }
-
-    void process_control_table(){
+    void run() {
 
     }
 
-
-
-    void kill_process(){
+    void process_control_table() {
 
     }
 
-    void run_process(){
+
+
+    void kill_process() {
 
     }
+
+    void run_process() {
+
+    }
+
+
 public:
-    Kernel () {
-
+    Kernel(int core_number, Simulator::enum_scheduling_algorithm scheduling_algorithm) {
+        scheduler = new Scheduler(this*, scheduling_algorithm);
+        cpu = new Cpu(core_number);
     }
 
-    void create_process(int id, int time){
+    void create_process(int id, int time) {
         Process* process = new Process(id, time);
         process_table.push_back(process);
     }
 
-    vector<Process*> getProcessTable(){
+    vector<Process*> getProcessTable() {
         return process_table;
     }
 
-    void printProcessTable(){
+    void printProcessTable() {
         cout << "--Processos--" << endl;
-        for (int i=0; i < process_table.size(); i++) {
-            cout << "id: " ;
+        for (int i = 0; i < process_table.size(); i++) {
+            cout << "id: ";
             cout << process_table[i]->getProcessId() << endl;
             cout << "time: ";
-            cout <<  process_table[i]->getReamainingTime() << endl;
+            cout << process_table[i]->getReamainingTime() << endl;
         }
     }
 

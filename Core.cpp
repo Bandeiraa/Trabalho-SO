@@ -1,10 +1,11 @@
 #include "Process.cpp"
-class Core{
+class Core {
     Process* current_process;
 public:
-    Core(){
+    Core() {
     }
-    Process* getCurrentProcess(){
+
+    Process* getCurrentProcess() {
         return current_process;
     }
 

@@ -13,7 +13,7 @@ class Process {
     enum_state state;
     int reamaining_time;
 public:
-    Process (int id, int time) {
+    Process(int id, int time) {
         process_id = id;
         total_time = time;
         reamaining_time = time;

@@ -7,7 +7,7 @@ using namespace std;
 
 class enum_scheduling_algorithm;
 
-class Simulator{
+class Simulator {
     Scheduler* scheduler;
     Kernel* kernel;
     int processor_cores_number;
@@ -16,14 +16,14 @@ class Simulator{
 
     int id_count;
 
-    void batch_process_init(){
+    void batch_process_init() {
 
     }
 
 
 
 
-    void run(){
+    void run() {
     }
 public:
 
@@ -35,19 +35,15 @@ public:
 
     enum_scheduling_algorithm* scheduling_algorithm;
 
-    Simulator(int core_number, int dquantum) {
-        kernel = defaultKernel;
+    Simulator(int core_number, int dquantum, enum_scheduling_algorithm* scheduling_algorithm) {
+        kernel = new Kernel(core_number, scheduling_algorithm);
         processor_cores_number = core_number;
         quantum = dquantum;
+        scheduling_algorithm = scheduling_algorithm;
         id_count = 0;
-        vector<Core*> cores;
-        for(int i = 0; i< core_number; i++){
-            cores.push_back(new Core());
-        }
-        scheduler = new Scheduler(defaultKernel, cores, scheduling_algorithm);
     }
 
-    void create_random_process(){
+    void create_random_process() {
         kernel->create_process(id_count, rand() % 21);
         id_count++;
     }
@@ -56,11 +52,11 @@ public:
         return kernel;
     }
 
-    int getIdCount(){
+    int getIdCount() {
         return id_count;
     }
 
-    void setIdCount(int id){
+    void setIdCount(int id) {
         id_count = id;
     }
 
@@ -72,7 +68,7 @@ void teste(string msg) {
 }
 
 int main() {
-    vector<Core*> *cores = new vector<Core*>;
+    vector<Core*>* cores = new vector<Core*>;
     Simulator* simulator = new Simulator(new Kernel(), 4, 10);
 
     simulator->create_random_process();
